@@ -2,3 +2,4 @@ FROM mysql
 ENV MYSQL_DATABASE jagan
 COPY ./createtable.sql /docker-entrypoint-initdb.d/
 COPY ./insertvalues.sql /docker-entrypoint-initdb.d/
+COPY ./priv.sql /docker-entrypoint-initdb.d/
